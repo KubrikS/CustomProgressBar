@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="ewY-8a-I34">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
+        <capability name="Image references" minToolsVersion="12.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -13,67 +14,73 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="CustomProgressBar" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="6c3-va-efJ">
-                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="774"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7SB-fJ-0BZ">
-                                <rect key="frame" x="100" y="674" width="214" height="48"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
-                                <state key="normal" title="Download">
-                                    <color key="titleColor" red="0.33333333329999998" green="0.33333333329999998" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                </state>
-                                <connections>
-                                    <action selector="startDownload:" destination="BYZ-38-t0r" eventType="touchUpInside" id="HAy-kb-mNO"/>
-                                </connections>
-                            </button>
                             <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="HPp-DR-rNH">
-                                <rect key="frame" x="132" y="446" width="150" height="4"/>
+                                <rect key="frame" x="132" y="402" width="150" height="4"/>
                             </progressView>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Some value" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bIh-wz-f4S">
-                                <rect key="frame" x="132" y="545" width="150" height="34"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                <textInputTraits key="textInputTraits"/>
-                                <connections>
-                                    <action selector="EnterText:" destination="BYZ-38-t0r" eventType="editingDidEnd" id="aep-PM-Wpp"/>
-                                </connections>
-                            </textField>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="HPp-DR-rNH" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="132" id="2Fa-IH-Zk1"/>
                             <constraint firstItem="6c3-va-efJ" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="3Rg-um-E71"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="7SB-fJ-0BZ" secondAttribute="bottom" constant="140" id="3l5-fF-OY6"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="7SB-fJ-0BZ" secondAttribute="trailing" constant="100" id="4QB-QR-ZqG"/>
-                            <constraint firstItem="bIh-wz-f4S" firstAttribute="top" secondItem="HPp-DR-rNH" secondAttribute="bottom" constant="95" id="5uk-62-Iyo"/>
                             <constraint firstItem="6c3-va-efJ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="7EY-Au-nue"/>
-                            <constraint firstItem="bIh-wz-f4S" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="132" id="Oim-Ck-V90"/>
                             <constraint firstItem="6c3-va-efJ" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="RDr-u0-o6r"/>
-                            <constraint firstItem="7SB-fJ-0BZ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="100" id="Wwj-3I-7we"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="bIh-wz-f4S" secondAttribute="trailing" constant="132" id="Yn0-gO-qlb"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="HPp-DR-rNH" secondAttribute="trailing" constant="132" id="cZs-QS-G4F"/>
                             <constraint firstItem="6c3-va-efJ" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="gVR-WP-Mb6"/>
                             <constraint firstItem="HPp-DR-rNH" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="mIj-S7-daH"/>
-                            <constraint firstItem="7SB-fJ-0BZ" firstAttribute="top" secondItem="bIh-wz-f4S" secondAttribute="bottom" constant="95" id="zAr-Cm-p5q"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="sPV-xk-Qft">
+                        <barButtonItem key="rightBarButtonItem" id="G5g-yk-Ra0">
+                            <imageReference key="image" image="icloud.and.arrow.down" catalog="system" symbolScale="large"/>
+                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <connections>
+                                <action selector="downloadButton:" destination="BYZ-38-t0r" id="3HD-xx-R6T"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="imageView" destination="6c3-va-efJ" id="1B3-au-9Ed"/>
                         <outlet property="progressView" destination="HPp-DR-rNH" id="PZN-Il-ggz"/>
-                        <outlet property="textField" destination="bIh-wz-f4S" id="lxc-NI-ycg"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="871.01449275362324" y="-23.4375"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="UNO-h0-TFF">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="ewY-8a-I34" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" barStyle="black" translucent="NO" id="JFC-lR-kEn">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" systemColor="systemTealColor"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="s59-ku-dlZ"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GdD-3r-O8h" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-39.130434782608695" y="-23.4375"/>
         </scene>
     </scenes>
     <resources>
+        <image name="icloud.and.arrow.down" catalog="system" width="128" height="112"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemTealColor">
+            <color red="0.35294117647058826" green="0.78431372549019607" blue="0.98039215686274506" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

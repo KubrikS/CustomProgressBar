@@ -28,7 +28,8 @@ class CircularProgressView: UIView {
             circleLayer.path = circularPath.cgPath
             circleLayer.lineCap = .butt
             circleLayer.lineWidth = circularPath.bounds.height
-            circleLayer.strokeColor = UIColor.systemGray5.cgColor
+            circleLayer.strokeColor = UIColor.black.cgColor
+            circleLayer.opacity  = 0.5
             
             progressLayer.path = circularPath.cgPath
             progressLayer.fillColor = UIColor.clear.cgColor
@@ -41,12 +42,13 @@ class CircularProgressView: UIView {
             layer.addSublayer(progressLayer)
         }
         
-        func progressAnimation(toValue: Double) {
+    func progressAnimation(first: Double, last: Double) {
             let circularProgressAnimation = CABasicAnimation(keyPath: "strokeEnd")
-            circularProgressAnimation.fromValue = 0.0
-            circularProgressAnimation.toValue = toValue
+            circularProgressAnimation.fromValue = first
+            circularProgressAnimation.toValue = last
+            progressLayer.strokeEnd = CGFloat(last)
             circularProgressAnimation.fillMode = .forwards
             circularProgressAnimation.isRemovedOnCompletion = false
-            progressLayer.add(circularProgressAnimation, forKey: "progressAniь")
+            progressLayer.add(circularProgressAnimation, forKey: "animateprogress")
         }
 }
