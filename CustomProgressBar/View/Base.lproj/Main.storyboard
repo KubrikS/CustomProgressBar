@@ -16,6 +16,9 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="6c3-va-efJ">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7SB-fJ-0BZ">
                                 <rect key="frame" x="100" y="674" width="214" height="48"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
@@ -26,19 +29,46 @@
                                     <action selector="startDownload:" destination="BYZ-38-t0r" eventType="touchUpInside" id="HAy-kb-mNO"/>
                                 </connections>
                             </button>
+                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="HPp-DR-rNH">
+                                <rect key="frame" x="132" y="446" width="150" height="4"/>
+                            </progressView>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Some value" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bIh-wz-f4S">
+                                <rect key="frame" x="132" y="545" width="150" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="EnterText:" destination="BYZ-38-t0r" eventType="editingDidEnd" id="aep-PM-Wpp"/>
+                                </connections>
+                            </textField>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="HPp-DR-rNH" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="132" id="2Fa-IH-Zk1"/>
+                            <constraint firstItem="6c3-va-efJ" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="3Rg-um-E71"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="7SB-fJ-0BZ" secondAttribute="bottom" constant="140" id="3l5-fF-OY6"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="7SB-fJ-0BZ" secondAttribute="trailing" constant="100" id="4QB-QR-ZqG"/>
+                            <constraint firstItem="bIh-wz-f4S" firstAttribute="top" secondItem="HPp-DR-rNH" secondAttribute="bottom" constant="95" id="5uk-62-Iyo"/>
+                            <constraint firstItem="6c3-va-efJ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="7EY-Au-nue"/>
+                            <constraint firstItem="bIh-wz-f4S" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="132" id="Oim-Ck-V90"/>
+                            <constraint firstItem="6c3-va-efJ" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="RDr-u0-o6r"/>
                             <constraint firstItem="7SB-fJ-0BZ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="100" id="Wwj-3I-7we"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="bIh-wz-f4S" secondAttribute="trailing" constant="132" id="Yn0-gO-qlb"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="HPp-DR-rNH" secondAttribute="trailing" constant="132" id="cZs-QS-G4F"/>
+                            <constraint firstItem="6c3-va-efJ" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="gVR-WP-Mb6"/>
+                            <constraint firstItem="HPp-DR-rNH" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="mIj-S7-daH"/>
+                            <constraint firstItem="7SB-fJ-0BZ" firstAttribute="top" secondItem="bIh-wz-f4S" secondAttribute="bottom" constant="95" id="zAr-Cm-p5q"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="imageView" destination="6c3-va-efJ" id="1B3-au-9Ed"/>
+                        <outlet property="progressView" destination="HPp-DR-rNH" id="PZN-Il-ggz"/>
+                        <outlet property="textField" destination="bIh-wz-f4S" id="lxc-NI-ycg"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-39" y="-23"/>
+            <point key="canvasLocation" x="-39.130434782608695" y="-23.4375"/>
         </scene>
     </scenes>
     <resources>

@@ -3,11 +3,12 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		74F304ED9ACC43F39D4A73FA /* Pods_CustomProgressBar.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4260B9DC640433469BF2CBD9 /* Pods_CustomProgressBar.framework */; };
+		85DD40E02562AA7F0087F241 /* ImageModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85DD40DF2562AA7F0087F241 /* ImageModel.swift */; };
 		85E92A8A25629EE300BB6538 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85E92A8925629EE300BB6538 /* AppDelegate.swift */; };
 		85E92A8C25629EE300BB6538 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85E92A8B25629EE300BB6538 /* SceneDelegate.swift */; };
 		85E92A8E25629EE300BB6538 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85E92A8D25629EE300BB6538 /* ViewController.swift */; };
@@ -21,6 +22,7 @@
 		4260B9DC640433469BF2CBD9 /* Pods_CustomProgressBar.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CustomProgressBar.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		45344629C48C4A170E2E397F /* Pods-CustomProgressBar.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CustomProgressBar.debug.xcconfig"; path = "Target Support Files/Pods-CustomProgressBar/Pods-CustomProgressBar.debug.xcconfig"; sourceTree = "<group>"; };
 		620F9B27A0F5C9F667887415 /* Pods-CustomProgressBar.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CustomProgressBar.release.xcconfig"; path = "Target Support Files/Pods-CustomProgressBar/Pods-CustomProgressBar.release.xcconfig"; sourceTree = "<group>"; };
+		85DD40DF2562AA7F0087F241 /* ImageModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageModel.swift; sourceTree = "<group>"; };
 		85E92A8625629EE300BB6538 /* CustomProgressBar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CustomProgressBar.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		85E92A8925629EE300BB6538 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		85E92A8B25629EE300BB6538 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -120,6 +122,7 @@
 		85E92AA225629F1A00BB6538 /* Network */ = {
 			isa = PBXGroup;
 			children = (
+				85DD40DF2562AA7F0087F241 /* ImageModel.swift */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -139,7 +142,6 @@
 				45344629C48C4A170E2E397F /* Pods-CustomProgressBar.debug.xcconfig */,
 				620F9B27A0F5C9F667887415 /* Pods-CustomProgressBar.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -258,6 +260,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				85E92A8E25629EE300BB6538 /* ViewController.swift in Sources */,
+				85DD40E02562AA7F0087F241 /* ImageModel.swift in Sources */,
 				85E92A8A25629EE300BB6538 /* AppDelegate.swift in Sources */,
 				85E92A8C25629EE300BB6538 /* SceneDelegate.swift in Sources */,
 				85E92AA525629F7300BB6538 /* CustomProgressBar.swift in Sources */,
